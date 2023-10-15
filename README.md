@@ -19,21 +19,21 @@
 * Для взаимодействия view<->viewmodel используется LiveData
 
 ### О серверной части
-* Для backend-части используется Spring Boot. Для запуска сервера, используйте docker-compose:
-```bash
-docker-compose build
-docker-compose up
-```
+* Для backend-части используется Spring Boot. 
+  - Для запуска сервера на Spring Boot в папке `VTB`, выполните следующую команду:
+    ```bash
+    ./mvnw spring-boot:run
+    ```
+
+  - Для запуска сервера через docker-compose:
+    ```bash
+    docker-compose build
+    docker-compose up
+    ```
 API будет доступно по адресу: http://localhost:60103
 
-Документация к API находится по адресу: http://localhost:60103/docs
+Документация к API находится по адресу: http://localhost:60103/docs http://localhost:8080/swagger-ui/index.html#/
 
-* Для сервера рекомендаций, который находится в папке `VTB_recom`, необходимо установить все зависимости из файла `requirements.txt` и затем запустить `main.py`:
-
-```bash
-pip install -r requirements.txt
-python main.py
-```
 
 ## Скриншоты
 <img src="https://github.com/alexp0111/VTBDepSel/assets/62151474/daaf1d78-7e20-4054-9045-2f2e5766d385" width="250"/>
