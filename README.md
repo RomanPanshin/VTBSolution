@@ -1,4 +1,4 @@
-# VTBDepSel - MORE.Tech 5.0 project
+# TechTime - MORE.Tech 5.0 project
 ## Описание
 
 ### Приложение создано с целью помочь пользователю выбрать подходящее отделение банка ВТБ. 
@@ -19,11 +19,14 @@
 * Для взаимодействия view<->viewmodel используется LiveData
 
 ### О серверной части
-* Для backend-части используется Spring Boot. Для запуска сервера в папке `VTB`, выполните следующую команду:
-
+* Для backend-части используется Spring Boot. Для запуска сервера, используйте docker-compose:
 ```bash
-./mvnw spring-boot:run
+docker-compose build
+docker-compose up
 ```
+API будет доступно по адресу: http://localhost:60103
+
+Документация к API находится по адресу: http://localhost:60103/docs
 
 * Для сервера рекомендаций, который находится в папке `VTB_recom`, необходимо установить все зависимости из файла `requirements.txt` и затем запустить `main.py`:
 
