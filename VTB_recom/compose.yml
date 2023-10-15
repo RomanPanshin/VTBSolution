@@ -1,0 +1,9 @@
+services:
+  app:
+    image: python:3.10
+    build:
+      context: "./"
+      dockerfile: "./Dockerfile"
+    ports:
+      - "60103:8031"
+    restart: always
