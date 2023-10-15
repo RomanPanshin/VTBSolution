@@ -18,6 +18,20 @@
 * Для работы с картами используется Yandex MapKit
 * Для взаимодействия view<->viewmodel используется LiveData
 
+### О серверной части
+* Для backend-части используется Spring Boot. Для запуска сервера в папке `VTB`, выполните следующую команду:
+
+```bash
+./mvnw spring-boot:run
+```
+
+* Для сервера рекомендаций, который находится в папке `VTB_recom`, необходимо установить все зависимости из файла `requirements.txt` и затем запустить `main.py`:
+
+```bash
+pip install -r requirements.txt
+python main.py
+```
+
 ## Скриншоты
 <img src="https://github.com/alexp0111/VTBDepSel/assets/62151474/daaf1d78-7e20-4054-9045-2f2e5766d385" width="250"/>
 <img src="https://github.com/alexp0111/VTBDepSel/assets/62151474/39d793fc-9577-4a7b-b7eb-c2e254d975e3" width="250"/>
@@ -25,9 +39,6 @@
 <img src="https://github.com/alexp0111/VTBDepSel/assets/62151474/60d8ce23-4da8-46da-aeb8-f4dcfddcacfd" width="250"/>
 <img src="https://github.com/alexp0111/VTBDepSel/assets/62151474/d00a0c8e-7fb2-49aa-8459-d0bff088a4f5" width="250"/>
 <img src="https://github.com/alexp0111/VTBDepSel/assets/62151474/13afafb4-49dd-4416-b3dc-a9355e4006bb" width="250"/>
-
-
-
 
 ## Требования к устройству для запуска
 * MIN SDK: 26
